@@ -3,9 +3,8 @@ const Distube = require("distube");
 const config = require('../config/config.json')
 
 let distube = new Distube(client, {
-  searchSongs: false,
+  searchSongs: 0,
   emitNewSongOnly: false,
-  highWaterMark: 1024 * 1021 * 64,
   leaveOnEmpty: false,
   leaveOnFinish: false,
   leaveOnStop: false,

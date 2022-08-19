@@ -6,9 +6,9 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
     const user = await client.users.fetch(newState.id);
     const member = newState.guild.member(user);
 
-    const j2channel = newState.guild.channels.cache.find(ch => ch.name === "🔊｜ᴊᴏɪɴ-ᴛᴏ-ᴄʀᴇᴀᴛᴇ").id;
-
-    if (!oldState.channel && newState.channel.id === j2channel) {
+    const j2channel = newState.guild.channels.cache.find(ch => ch.name === "🔊｜ᴊᴏɪɴ-ᴛᴏ-ᴄʀᴇᴀᴛᴇ");
+    if(!j2channel) return
+    if (!oldState.channel && newState.channel.id === j2channel.id) {
         const channel = await newState.guild.channels.create(user.username, {
             type: "voice",
             parent: newState.channel.parent,

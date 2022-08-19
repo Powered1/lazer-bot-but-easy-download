@@ -1,8 +1,8 @@
 {
-  "token": "Bot_TOKEN",
+  "token": "bot_TOKEN",
   "prefix": "!",
   "ownerIDS": [
-    "882481863661342770"
+    "ownerIDS"
   ],
   "mongo": "MONGO_DB_URL",
   "everyoneMention": false,

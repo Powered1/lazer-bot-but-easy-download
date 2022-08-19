@@ -16,7 +16,7 @@ client.on('ready', () => {
     ..............................................................................
     `
   );
-  client.user.setActivity(`${config.prefix}help || Tech Boy Gaming`)
+  client.user.setActivity(`${config.prefix}help`)
 })
 
 
